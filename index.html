@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-alvarob27</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Lato:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <header class="cabecera">
+        <h1 id="nombreUsuario" class="text-4xl font-bold">polkadev</h1>
+        <ul id="menuNav" class="lg:text-lg">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacto</li>
+        </ul>
+
+
+    </header>
+
+    <main>
+        <article id="seccionPrincipal" class="h-full md:h-screen pb-28 pt-10 md:pb-0 ">
+
+            <div class="efecto-poster">
+                <div id="poster" class="w-72 m-0 h-56 rounded-3xl">
+                    <video autoplay loop muted>
+                        <source src="/assets/videoParticulas.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </article>
+
+        <article id="seccionSecundaria" class="pt-24">
+            <h1 class="text-4xl md:text-5xl ar-one-sans">Tecnologías</h1>
+            <div id="contenedorTecnologias">
+                <div class="parrafo text-xl md:text-2xl">
+                    <p> Estas tecnologías son la base de mi experiencia y demuestran
+                        mi
+                        compromiso
+                        continuo con la mejora y la adaptación en el siempre cambiante mundo de la tecnología. <br><br>
+                        ¡Explora
+                        y
+                        descubre cómo estas herramientas me han permitido llevar a cabo proyectos emocionantes y
+                        desafiantes
+                        a lo largo de mi carrera!</p>
+                    <div id="contenedorImagenes" class="gap-10 pt-20">
+                        <img id="imgHtml" src="/assets/html5.png" class="w-32 h-44 md:w-28 md:h-40 lg:w-40 lg:h-48"
+                            alt="Imagen de html">
+                        <img id="imgCss" src="/assets/CSS3.png" class="w-32 h-44 md:w-28 md:h-40 lg:w-40 lg:h-48" alt="Imagen de css">
+                        <img id="imgJs" src="/assets/javascript.png" class="w-32 h-44 md:w-28 md:h-40 lg:w-40 lg:h-48"
+                            alt="Imagen de javascript">
+                        <img id="imgPhp" src="/assets/php.png" class="w-44 h-36 lg:w-52 lg:h-48" alt="Imagen de PHP">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="seccionTerciaria" class="bg-black text-white text-center pt-24 md:pt-40">
+            <h1 class="text-4xl md:text-5xl ar-one-sans">Frameworks</h1>
+            <div id="contenedorTecnologias">
+                <div class="parrafo text-xl md:text-2xl">
+                    <p> Con experiencia en Angular, React.js, Astro, y la habilidad de estilizar con Tailwind CSS y
+                        Bootstrap, estoy especializado en crear experiencias web dinámicas y eficientes. <br><br>
+                        Mi versatilidad abarca también el backend, donde trabajo con Express y Node.js, y en el
+                        desarrollo de aplicaciones con Next.js para crear aplicaciones web de alta calidad y
+                        rendimiento.</p>
+                    <div id="contenedorImagenes" class="gap-10 md:gap-2 pt-20">
+                        <img id="imgAngular" src="/assets/Angular.png" class="w-40 h-40 md:w-40 md:h-40 lg:w-48 lg:h-48"
+                            alt="Imagen de html">
+                        <img id="imgReact" src="/assets/react.png" class="w-44 h-44 md:w-40 md:h-40 lg:w-48 lg:h-48" alt="Imagen de css">
+                        <img id="imgAstro" src="/assets/astro.png" class="w-48 h-48 md:w-40 md:h-44 lg:w-48 lg:h-52"
+                            alt="Imagen de javascript">
+                        <img id="imgTailwind" src="/assets/tailwind.png" class="w-36 h-24 md:w-32 md:h-24 lg:w-36 lg:h-28" alt="Imagen de PHP">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <script>
+        const el = document.getElementById('poster');
+        const height = el.clientHeight;
+        const width = el.clientWidth;
+
+        el.addEventListener('mousemove', (evt) => {
+            const { layerX, layerY } = evt
+
+            const yRotation = (
+                (layerX - width / 2) / width
+            ) * 20
+
+            const xRotation = (
+                (layerY - height / 2) / height
+            ) * 20
+
+            const string = `
+            perspective(500px)
+            scale(1.1)
+            rotateX(${xRotation}deg)
+            rotateY(${yRotation}deg)`
+
+            el.style.transform = string
+        })
+
+        el.addEventListener('mouseout', () => {
+            el.style.transform = `
+            perspective(500px)
+            scale(1)
+            rotateX(0)
+            rotateY(0)`
+        })
+
+    </script>
+
+</body>
+
+</html>
