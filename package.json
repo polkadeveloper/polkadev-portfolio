@@ -9,7 +9,7 @@
   "author": "polkadev",
   "license": "ISC",
   "dependencies": {
-    "geist": "1.0.0",
+    "geist": "^1.0.0",
     "resend": "1.1.0"
   }
 }
