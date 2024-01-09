@@ -33,7 +33,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: 'Geist Black'; /* El nombre que desees darle a la fuente */
-  src: url('/node_modules/geist/dist/fonts/geist-sans/Geist-Black.woff2') format('opentype');
+  src: url('/public/fonts/Geist-Black.woff2') format('opentype');
   /* Otras propiedades de fuente, como font-weight y font-style, si es necesario */
 }
 
