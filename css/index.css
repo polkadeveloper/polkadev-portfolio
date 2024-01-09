@@ -44,7 +44,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: 'Geist Bold';
-  src: url('/node_modules/geist/dist/fonts/geist-sans/Geist-Bold.woff2') format('opentype');
+  src: url('/public/fonts/Geist-Bold.woff2') format('opentype');
 }
 
 .geist-bold{
@@ -53,7 +53,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: 'Geist Extra Bold';
-  src: url('/node_modules/geist/dist/fonts/geist-sans/Geist-ExtraBold.woff2') format('opentype');
+  src: url('/public/fonts/Geist-ExtraBold.woff2') format('opentype');
 }
 
 .geist-extra-bold{
@@ -63,7 +63,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: 'Geist Light';
-  src: url('/node_modules/geist/dist/fonts/geist-sans/Geist-Light.woff2') format('opentype');
+  src: url('/public/fonts/Geist-Light.woff2') format('opentype');
 }
 
 .geist-light{
@@ -72,7 +72,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: 'Geist Extra Light';
-  src: url('/node_modules/geist/dist/fonts/geist-sans/Geist-ExtraLight.woff2') format('opentype');
+  src: url('/public/fonts/Geist-ExtraLight.woff2') format('opentype');
 }
 
 .geist-extra-light{
@@ -81,7 +81,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: 'Geist Medium';
-  src: url('/node_modules/geist/dist/fonts/geist-sans/Geist-Medium.woff2') format('opentype');
+  src: url('/public/fonts/Geist-Medium.woff2') format('opentype');
 }
 
 .geist-medium{
@@ -90,7 +90,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: 'Geist Regular';
-  src: url('/node_modules/geist/dist/fonts/geist-sans/Geist-Regular.woff2') format('opentype');
+  src: url('/public/fonts/Geist-Regular.woff2') format('opentype');
 }
 
 .geist-regular{
@@ -99,7 +99,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: 'Geist Thin';
-  src: url('/node_modules/geist/dist/fonts/geist-sans/Geist-Thin.woff2') format('opentype');
+  src: url('/public/fonts/Geist-Thin.woff2') format('opentype');
 }
 
 .geist-thin{
@@ -108,7 +108,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: 'Geist Ultra';
-  src: url('/node_modules/geist/dist/fonts/geist-sans/Geist-Ultra.woff2') format('opentype');
+  src: url('/public/fonts/Geist-Ultra.woff2') format('opentype');
 }
 
 .geist-ultra{
