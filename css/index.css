@@ -1,118 +1,116 @@
 /* Restablecer estilos de autocompletado de navegador para el color del texto */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-    -webkit-text-fill-color: #bfe9ff; /* Cambia "tu-color" al color que desees */
+  -webkit-text-fill-color: #bfe9ff; /* Cambia "tu-color" al color que desees */
 }
 
 /* Restablecer estilos de autocompletado de navegador para el fondo */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0 1000px #062d42 inset; /* Cambia "tu-color-de-fondo" al color deseado */
-    background-color: #062d42 !important; /* Cambia "tu-color-de-fondo" al color que desees */
+  background-color: #062d42 !important; /* Cambia "tu-color-de-fondo" al color que desees */
 }
 
 /* Aplica un tipo de letra específico al placeholder */
 input::placeholder {
-  font-family: 'Geist Thin', sans-serif; 
+  font-family: "Geist Thin", sans-serif;
 }
 
 textarea::placeholder {
-  font-family: 'Geist Thin', sans-serif; 
+  font-family: "Geist Thin", sans-serif;
 }
 
 /* Fuentes de Google */
 
 .ar-one-sans {
-  font-family: 'AR One Sans', sans-serif;
+  font-family: "AR One Sans", sans-serif;
   font-weight: lighter;
 }
 
-.inter-font{
-  font-family: 'Inter', sans-serif;
+.inter-font {
+  font-family: "Inter", sans-serif;
 }
 
 @font-face {
-  font-family: 'Geist Black'; /* El nombre que desees darle a la fuente */
-  src: url('/public/fonts/Geist-Black.woff2') format('opentype');
+  font-family: "Geist Black"; /* El nombre que desees darle a la fuente */
+  src: url("/public/fonts/Geist-Black.woff2") format("opentype");
   /* Otras propiedades de fuente, como font-weight y font-style, si es necesario */
 }
 
-.geist-black{
-  font-family: 'Geist Black', sans-serif;
-
+.geist-black {
+  font-family: "Geist Black", sans-serif;
 }
 
 @font-face {
-  font-family: 'Geist Bold';
-  src: url('/public/fonts/Geist-Bold.woff2') format('opentype');
+  font-family: "Geist Bold";
+  src: url("/public/fonts/Geist-Bold.woff2") format("opentype");
 }
 
-.geist-bold{
-  font-family: 'Geist Bold', sans-serif;
-}
-
-@font-face {
-  font-family: 'Geist Extra Bold';
-  src: url('/public/fonts/Geist-ExtraBold.woff2') format('opentype');
-}
-
-.geist-extra-bold{
-  font-family: 'Geist Extra Bold', sans-serif;
-}
-
-
-@font-face {
-  font-family: 'Geist Light';
-  src: url('/public/fonts/Geist-Light.woff2') format('opentype');
-}
-
-.geist-light{
-  font-family: 'Geist Light', sans-serif;
+.geist-bold {
+  font-family: "Geist Bold", sans-serif;
 }
 
 @font-face {
-  font-family: 'Geist Extra Light';
-  src: url('/public/fonts/Geist-ExtraLight.woff2') format('opentype');
+  font-family: "Geist Extra Bold";
+  src: url("/public/fonts/Geist-ExtraBold.woff2") format("opentype");
 }
 
-.geist-extra-light{
-  font-family: 'Geist Extra Light', sans-serif;
-}
-
-@font-face {
-  font-family: 'Geist Medium';
-  src: url('/public/fonts/Geist-Medium.woff2') format('opentype');
-}
-
-.geist-medium{
-  font-family: 'Geist Medium', sans-serif;
+.geist-extra-bold {
+  font-family: "Geist Extra Bold", sans-serif;
 }
 
 @font-face {
-  font-family: 'Geist Regular';
-  src: url('/public/fonts/Geist-Regular.woff2') format('opentype');
+  font-family: "Geist Light";
+  src: url("/public/fonts/Geist-Light.woff2") format("opentype");
 }
 
-.geist-regular{
-  font-family: 'Geist Regular', sans-serif;
-}
-
-@font-face {
-  font-family: 'Geist Thin';
-  src: url('/public/fonts/Geist-Thin.woff2') format('opentype');
-}
-
-.geist-thin{
-  font-family: 'Geist Thin', sans-serif;
+.geist-light {
+  font-family: "Geist Light", sans-serif;
 }
 
 @font-face {
-  font-family: 'Geist Ultra';
-  src: url('/public/fonts/Geist-Ultra.woff2') format('opentype');
+  font-family: "Geist Extra Light";
+  src: url("/public/fonts/Geist-ExtraLight.woff2") format("opentype");
 }
 
-.geist-ultra{
-  font-family: 'Geist Ultra', sans-serif;
+.geist-extra-light {
+  font-family: "Geist Extra Light", sans-serif;
+}
+
+@font-face {
+  font-family: "Geist Medium";
+  src: url("/public/fonts/Geist-Medium.woff2") format("opentype");
+}
+
+.geist-medium {
+  font-family: "Geist Medium", sans-serif;
+}
+
+@font-face {
+  font-family: "Geist Regular";
+  src: url("/public/fonts/Geist-Regular.woff2") format("opentype");
+}
+
+.geist-regular {
+  font-family: "Geist Regular", sans-serif;
+}
+
+@font-face {
+  font-family: "Geist Thin";
+  src: url("/public/fonts/Geist-Thin.woff2") format("opentype");
+}
+
+.geist-thin {
+  font-family: "Geist Thin", sans-serif;
+}
+
+@font-face {
+  font-family: "Geist Ultra";
+  src: url("/public/fonts/Geist-Ultra.woff2") format("opentype");
+}
+
+.geist-ultra {
+  font-family: "Geist Ultra", sans-serif;
 }
 
 .grid-container {
@@ -124,7 +122,6 @@ textarea::placeholder {
   place-items: center;
   padding-top: 5rem;
   padding-bottom: 8rem;
-
 }
 
 .grid-container > div {
@@ -137,571 +134,558 @@ textarea::placeholder {
 
 @media screen and (max-width: 600px) {
   .grid-container {
-      grid-template-columns: 72px 72px 72px; /* Corregir las comas a espacios */
-      grid-template-rows: 72px 72px; /* Corregir las comas a espacios */
-      grid-gap: 20px;
-      padding-top: 3rem;
-      padding-bottom: 7rem;
+    grid-template-columns: 72px 72px 72px; /* Corregir las comas a espacios */
+    grid-template-rows: 72px 72px; /* Corregir las comas a espacios */
+    grid-gap: 20px;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
   }
-  
 }
-
-
-
-
 
 /* Animacion para tarjeta */
- .card {
-   overflow: visible;
-   width: 250px;
-   height: 320px;
- }
-
- .content {
-   width: 100%;
-   height: 100%;
-   transform-style: preserve-3d;
-   transition: transform 0.8s;
-   box-shadow: 0px 0px 10px 1px #000000ee;
-   border-radius: 5px;
- }
-
- .front,
- .back {
-   background-color: #000000;
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   backface-visibility: hidden;
-   -webkit-backface-visibility: hidden;
-   border-radius: 5px;
-   overflow: hidden;
- }
-
- .back {
-   width: 100%;
-   height: 100%;
-   justify-content: center;
-   display: flex;
-   align-items: center;
-   overflow: hidden;
- }
-
- .back::before {
-   position: absolute;
-   content: ' ';
-   display: block;
-   width: 160px;
-   height: 160%;
-   background: linear-gradient(90deg, transparent, #00b7ff, #00b7ff, #00b7ff, #00b7ff, transparent);
-   animation: rotation_481 5000ms infinite linear;
- }
-
- .back-content {
-   position: absolute;
-   width: 99%;
-   height: 99%;
-   background-color: #000000;
-   border-radius: 5px;
-   color: white;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 30px;
- }
-
- .card:hover .content {
-   transform: rotateY(180deg);
- }
-
- @keyframes rotation_481 {
-   0% {
-     transform: rotateZ(0deg);
-   }
-
-   0% {
-     transform: rotateZ(360deg);
-   }
- }
-
- .front {
-   transform: rotateY(180deg);
-   color: white;
- }
-
- .front .front-content {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   padding: 10px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
- }
-
- .front-content .badge {
-   background-color: #000000;
-   padding: 2px 10px;
-   border-radius: 10px;
-   backdrop-filter: blur(2px);
-   width: fit-content;
- }
-
- .description {
-   box-shadow: 0px 0px 10px 5px #000000;
-   width: 100%;
-   padding: 10px;
-   background-color: #160214;
-   backdrop-filter: blur(5px);
-   border-radius: 5px;
- }
-
- .title {
-   font-size: 11px;
-   max-width: 100%;
-   display: flex;
-   justify-content: space-between;
- }
-
- .title p {
-   width: 50%;
- }
-
- .card-footer {
-   color: #ffffff88;
-   margin-top: 5px;
-   font-size: 8px;
- }
-
- .front .img {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   object-position: center;
- }
-
- .circle {
-   width: 90px;
-   height: 90px;
-   background-color: #000000;
-   position: relative;
-   filter: blur(15px);
-   animation: floating 2600ms infinite linear;
- }
-
- #bottom {
-   background-color: #000000;
-   left: 50px;
-   top: 0px;
-   width: 150px;
-   height: 150px;
-   animation-delay: -800ms;
- }
-
- #right {
-   background-color: #000000;
-   left: 160px;
-   top: -80px;
-   width: 30px;
-   height: 30px;
-   animation-delay: -1800ms;
- }
-
- @keyframes floating {
-   0% {
-     transform: translateY(0px);
-   }
-
-   50% {
-     transform: translateY(10px);
-   }
-
-   100% {
-     transform: translateY(0px);
-   }
- }
-
-
- /* Animacion Scroll */
-
- .hidden-scroll {
-
-   transform: scale(0.8);
-   opacity: 0;
-   transition: all 1.2s ease-out;
- }
-
- .mostrar-scroll {
-
-   transform: scale(1);
-   opacity: 1;
- }
-
- /* EFECTO IMAGEN 3D */
- .efecto-poster {
-   display: flex;
-   justify-content: center;
-
- }
-
- #poster {
-   transition: transform 0.1s;
-   overflow: hidden;
-   /* Para ocultar el desbordamiento*/
- }
-
- /* Al hacer hover sobre el poster hacer un scale al elemento con id avatar */
-  #poster:hover .info-usuario {
-    transform: scale(1.05);
-  }
-
-  /* Añadir una transición para que el efecto de scale sea suave */
-  .info-usuario {
-    transition: transform 0.1s;
-  }
-
-
- #seccionTerciaria {
-   background-color: #000000;
-   color: rgb(222, 213, 213);
- }
-
- #contenedorImagenes>div {
-   background-color: #3a0633;
-   transition: transform 0.3s ease-out;
- }
-
-
- #contenedorImagenes>div:hover {
-   transform: translateY(-8px);
-   /* Muevo el elemento en el eje Y */
- }
-
- #logoUsuario {
-   transition: transform 0.3s ease-in-out;
- }
-
- #logoUsuario:hover {
-   cursor: pointer;
-   transform: scale(1.1);
- }
-
- .logo-redes {
-   transition: transform 0.3s ease-in-out;
- }
-
- .logo-redes:hover {
-   cursor: pointer;
-   transform: scale(1.3);
- }
-
-
- /* CSS Para el menú móviles */
-
- .mobile-menu {
-   position: fixed;
-   top: 0;
-   right: -100%;
-   /* Inicialmente oculto fuera del área visible */
-   width: 90%;
-   height: 100%;
-   background-color: #000000;
-   transition: right 0.5s;
-   z-index: 999;
-   display: flex;
-   flex-direction: column;
-   padding: 15px;
-   gap: 15px;
-   border-radius: 15px;
- }
-
- .close-button {
-   position: absolute;
-   top: 10px;
-   right: 10px;
-   cursor: pointer;
-   width: 30px;
-   /* Establecer un ancho fijo */
-   height: 30px;
-   /* Establecer una altura fija */
-   font-size: 24px;
-   color: #fff;
-   border: 2px solid rgb(255, 255, 255);
-   border-radius: 50%;
-   /* Hacer el borde circular */
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
-
-
- .menu-toggle {
-   cursor: pointer;
- }
-
- .menu-toggle.active~.mobile-menu {
-   right: 0;
-   /* Mostrar el menú desplegable al hacer clic */
- }
-
- html {
-  scroll-behavior: smooth;
+.card {
+  overflow: visible;
+  width: 250px;
+  height: 320px;
 }
 
- /* DISEÑO PARA MÓVILES */
- @media (min-width: 200px) {
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
 
-   .cabecera {
-      background-image: linear-gradient(to top,  rgb(0, 0, 0), #005197, #51bdf8); 
-     /* background-image: linear-gradient(to left top,  rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), #00112e, #002058, #56006a, #ff00a6); */
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     height: 20vh;
-   }
+.front,
+.back {
+  background-color: #000000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
 
-   .cabecera {
-     color: white;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   }
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #00b7ff,
+    #00b7ff,
+    #00b7ff,
+    #00b7ff,
+    transparent
+  );
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #000000;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.front-content .badge {
+  background-color: #000000;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+
+.description {
+  box-shadow: 0px 0px 10px 5px #000000;
+  width: 100%;
+  padding: 10px;
+  background-color: #160214;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 11px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title p {
+  width: 50%;
+}
+
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+.front .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  background-color: #000000;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+  background-color: #000000;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #000000;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animacion Scroll */
+
+.hidden-scroll {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 1.2s ease-out;
+}
+
+.mostrar-scroll {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* EFECTO IMAGEN 3D */
+.efecto-poster {
+  display: flex;
+  justify-content: center;
+}
+
+#poster {
+  transition: transform 0.1s;
+  overflow: hidden;
+  /* Para ocultar el desbordamiento*/
+}
+
+/* Al hacer hover sobre el poster hacer un scale al elemento con id avatar */
+#poster:hover .info-usuario {
+  transform: scale(1.05);
+}
+
+/* Añadir una transición para que el efecto de scale sea suave */
+.info-usuario {
+  transition: transform 0.1s;
+}
+
+#seccionTerciaria {
+  background-color: #000000;
+  color: rgb(222, 213, 213);
+}
+
+#contenedorImagenes > div {
+  background-color: #3a0633;
+  transition: transform 0.3s ease-out;
+}
+
+#contenedorImagenes > div:hover {
+  transform: translateY(-8px);
+  /* Muevo el elemento en el eje Y */
+}
+
+#logoUsuario {
+  transition: transform 0.3s ease-in-out;
+}
+
+#logoUsuario:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.logo-redes {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-redes:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+/* CSS Para el menú móviles */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  /* Inicialmente oculto fuera del área visible */
+  width: 90%;
+  height: 100%;
+  background-color: #000000;
+  transition: right 0.5s;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  border-radius: 15px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 30px;
+  /* Establecer un ancho fijo */
+  height: 30px;
+  /* Establecer una altura fija */
+  font-size: 24px;
+  color: #fff;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  /* Hacer el borde circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle {
+  cursor: pointer;
+}
+
+.menu-toggle.active ~ .mobile-menu {
+  right: 0;
+  /* Mostrar el menú desplegable al hacer clic */
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #0b599d black;
+}
 
 
-   #seccionPrincipal {
+
+/* DISEÑO PARA MÓVILES */
+@media (min-width: 200px) {
+  .cabecera {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), #005197, #51bdf8);
+    /* background-image: linear-gradient(to left top,  rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), #00112e, #002058, #56006a, #ff00a6); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+  }
+
+  .cabecera {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  #seccionPrincipal {
     /* background: linear-gradient(rgb(16, 14, 14), rgb(16, 14, 14), rgb(10, 9, 9), rgb(42, 7, 26), #68095a, #a5108f, #b8109f, #dd0abd, #830c6f, #670957, #45063a, #2f0428, #160214); */
     background-image: url(../assets/fondo-arcoiris2.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
 
-   }
+  #seccionSecundaria {
+    background-color: #000000;
+  }
 
-   #seccionSecundaria {
-     background-color: #000000;
-   }
+  #seccionSecundaria {
+    color: rgb(222, 213, 213);
+    text-align: center;
+  }
 
+  #contenedorTecnologias {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-   #seccionSecundaria {
-     color: rgb(222, 213, 213);
-     text-align: center;
-   }
+  .parrafo {
+    font-family: "Lato", sans-serif;
+    color: rgb(222, 213, 213);
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
-   #contenedorTecnologias {
-     display: flex;
-     padding-top: 20px;
-     padding-bottom: 20px;
+  #contenedorImagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-   }
+  #imgPhp {
+    padding-top: 25px;
+  }
+}
 
-   .parrafo {
-     font-family: 'Lato', sans-serif;
-     color: rgb(222, 213, 213);
-     padding-top: 20px;
-     text-align: left;
-     margin-left: 10%;
-     margin-right: 10%;
-   }
+/* DISEÑO PARA TABLETS */
 
-   #contenedorImagenes {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-   }
+@media (min-width: 768px) {
+  .cabecera {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    /* Cambiamos de flex a grid */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Creamos tres columnas con tamaños iguales */
+    align-items: center;
+    justify-items: center;
+    height: 20vh;
+  }
 
-   #imgPhp {
-     padding-top: 25px;
-   }
+  #logoUsuario {
+    padding-top: 0px;
+    grid-column: 1;
+    /* Ocupa la primera columna */
+  }
 
- }
+  #menuNav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    /* Alinea el contenido al centro dentro de la segunda columna */
+    grid-column: 2;
+    /* Ocupa la segunda columna */
+    gap: 5px;
+  }
 
- /* DISEÑO PARA TABLETS */
+  #menuSocial {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    /* Alinea el contenido al centro dentro de la segunda columna */
+    grid-column: 3;
+    /* Ocupa la segunda columna */
+    gap: 15px;
+  }
 
- @media (min-width: 768px) {
+  #menuNav {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
 
-   .cabecera {
-     background-color: rgb(0, 0, 0);
-     display: grid;
-     /* Cambiamos de flex a grid */
-     grid-template-columns: 1fr 1fr 1fr;
-     /* Creamos tres columnas con tamaños iguales */
-     align-items: center;
-     justify-items: center;
-     height: 20vh;
-   }
+  #menuNav li {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
 
-   #logoUsuario {
-     padding-top: 0px;
-     grid-column: 1;
-     /* Ocupa la primera columna */
-   }
+  #menuNav li:hover {
+    transform: scale(1.1);
+    /* Agranda el elemento al 110% de su tamaño original */
+  }
 
-   #menuNav {
-     display: flex;
-     list-style: none;
-     padding: 0;
-     justify-content: center;
-     /* Alinea el contenido al centro dentro de la segunda columna */
-     grid-column: 2;
-     /* Ocupa la segunda columna */
-     gap: 5px;
-   }
+  #seccionSecundaria {
+    color: rgb(222, 213, 213);
+    text-align: center;
+    font-family: "AR One Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: lighter;
+  }
 
-   #menuSocial {
-     display: flex;
-     list-style: none;
-     padding: 0;
-     justify-content: center;
-     /* Alinea el contenido al centro dentro de la segunda columna */
-     grid-column: 3;
-     /* Ocupa la segunda columna */
-     gap: 15px;
-   }
+  #contenedorTecnologias {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-   #menuNav {
-     display: flex;
-     gap: 10px;
-     list-style: none;
-     padding: 0;
-     cursor: pointer;
-     transition: transform 0.3s ease-in-out;
-   }
+  .parrafo {
+    font-family: "Lato", sans-serif;
+    justify-content: center;
+    padding-top: 20px;
+    text-align: justify;
+  }
 
-   #menuNav li {
-     display: inline-block;
-     padding: 10px;
-     text-decoration: none;
-     cursor: pointer;
-     transition: transform 0.3s ease-in-out;
-   }
+  #contenedorImagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
-   #menuNav li:hover {
-     transform: scale(1.1);
-     /* Agranda el elemento al 110% de su tamaño original */
-   }
+/* DISEÑO PARA ORDENADORES */
 
-   #seccionSecundaria {
-     color: rgb(222, 213, 213);
-     text-align: center;
-     font-family: 'AR One Sans', sans-serif;
-     font-size: 2rem;
-     font-weight: lighter;
-   }
+@media (min-width: 1024px) {
+  #seccionSecundaria {
+    color: rgb(222, 213, 213);
+    text-align: center;
+    font-family: "AR One Sans", sans-serif;
+    font-weight: lighter;
+  }
 
+  #contenedorTecnologias {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-   #contenedorTecnologias {
-     display: flex;
-     padding-top: 20px;
-     padding-bottom: 20px;
+  .parrafo {
+    font-family: "Lato", sans-serif;
+    justify-content: center;
+    padding-top: 20px;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
-   }
+  #contenedorImagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-   .parrafo {
-     font-family: 'Lato', sans-serif;
-     justify-content: center;
-     padding-top: 20px;
-     text-align: justify;
-   }
+  /* ---- ANIMACIONES ---- */
 
-   #contenedorImagenes {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-   }
+  /* Animación al cargar la página de tracking in */
 
+  /* Clase para aplicar la animación en un elemento (nombre, duración, velocidad de la animación, delay, estilo en el tiempo (linear, both ...) */
+  .tracking-in-personal {
+    -webkit-animation: tracking-in-personal 1.5s
+      cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.2s both;
+    animation: tracking-in-personal 1.5s cubic-bezier(0.9, -0.28, 0.735, 0.045)
+      0.2s both;
+  }
 
- }
+  @-webkit-keyframes tracking-in-personal {
+    0% {
+      letter-spacing: 0.5em;
+      -webkit-transform: translateZ(375px);
+      transform: translateZ(375px);
+      opacity: 0;
+    }
 
+    40% {
+      opacity: 0.5;
+    }
 
- /* DISEÑO PARA ORDENADORES */
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
 
- @media (min-width: 1024px) {
+  @keyframes tracking-in-personal {
+    0% {
+      letter-spacing: 0.5em;
+      -webkit-transform: translateZ(375px);
+      transform: translateZ(375px);
+      opacity: 0;
+    }
 
-   #seccionSecundaria {
-     color: rgb(222, 213, 213);
-     text-align: center;
-     font-family: 'AR One Sans', sans-serif;
-     font-weight: lighter;
-   }
+    40% {
+      opacity: 0.5;
+    }
 
-   #contenedorTecnologias {
-     display: flex;
-     padding-top: 20px;
-     padding-bottom: 20px;
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+}
 
-   }
-
-   .parrafo {
-     font-family: 'Lato', sans-serif;
-     justify-content: center;
-     padding-top: 20px;
-     text-align: justify;
-     margin-left: 10%;
-     margin-right: 10%;
-   }
-
-   #contenedorImagenes {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-
-   /* ---- ANIMACIONES ---- */
-
-   /* Animación al cargar la página de tracking in */
-
-   /* Clase para aplicar la animación en un elemento (nombre, duración, velocidad de la animación, delay, estilo en el tiempo (linear, both ...) */
-   .tracking-in-personal {
-     -webkit-animation: tracking-in-personal 1.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.2s both;
-     animation: tracking-in-personal 1.5s cubic-bezier(0.900, -0.280, 0.735, 0.045) 0.2s both;
-   }
-
-   @-webkit-keyframes tracking-in-personal {
-     0% {
-       letter-spacing: 0.5em;
-       -webkit-transform: translateZ(375px);
-       transform: translateZ(375px);
-       opacity: 0;
-     }
-
-     40% {
-       opacity: 0.5;
-     }
-
-     100% {
-       -webkit-transform: translateZ(0);
-       transform: translateZ(0);
-       opacity: 1;
-     }
-   }
-
-   @keyframes tracking-in-personal {
-     0% {
-       letter-spacing: 0.5em;
-       -webkit-transform: translateZ(375px);
-       transform: translateZ(375px);
-       opacity: 0;
-     }
-
-     40% {
-       opacity: 0.5;
-     }
-
-     100% {
-       -webkit-transform: translateZ(0);
-       transform: translateZ(0);
-       opacity: 1;
-     }
-   }
- }
-
-
- @media (min-width: 1440px) {
-
-   .parrafo {
-     margin-left: 20%;
-     margin-right: 20%;
-   }
- }
+@media (min-width: 1440px) {
+  .parrafo {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
