@@ -33,7 +33,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: "Geist Black"; /* El nombre que desees darle a la fuente */
-  src: url("/public/fonts/Geist-Black.woff2") format("opentype");
+  src: url("/fonts/Geist-Black.woff2") format("opentype");
   /* Otras propiedades de fuente, como font-weight y font-style, si es necesario */
 }
 
@@ -43,7 +43,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: "Geist Bold";
-  src: url("/public/fonts/Geist-Bold.woff2") format("opentype");
+  src: url("/fonts/Geist-Bold.woff2") format("opentype");
 }
 
 .geist-bold {
@@ -52,7 +52,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: "Geist Extra Bold";
-  src: url("/public/fonts/Geist-ExtraBold.woff2") format("opentype");
+  src: url("/fonts/Geist-ExtraBold.woff2") format("opentype");
 }
 
 .geist-extra-bold {
@@ -61,7 +61,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: "Geist Light";
-  src: url("/public/fonts/Geist-Light.woff2") format("opentype");
+  src: url("/fonts/Geist-Light.woff2") format("opentype");
 }
 
 .geist-light {
@@ -70,7 +70,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: "Geist Extra Light";
-  src: url("/public/fonts/Geist-ExtraLight.woff2") format("opentype");
+  src: url("/fonts/Geist-ExtraLight.woff2") format("opentype");
 }
 
 .geist-extra-light {
@@ -79,7 +79,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: "Geist Medium";
-  src: url("/public/fonts/Geist-Medium.woff2") format("opentype");
+  src: url("/fonts/Geist-Medium.woff2") format("opentype");
 }
 
 .geist-medium {
@@ -88,7 +88,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: "Geist Regular";
-  src: url("/public/fonts/Geist-Regular.woff2") format("opentype");
+  src: url("/fonts/Geist-Regular.woff2") format("opentype");
 }
 
 .geist-regular {
@@ -97,7 +97,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: "Geist Thin";
-  src: url("/public/fonts/Geist-Thin.woff2") format("opentype");
+  src: url("/fonts/Geist-Thin.woff2") format("opentype");
 }
 
 .geist-thin {
@@ -106,7 +106,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: "Geist Ultra";
-  src: url("/public/fonts/Geist-Ultra.woff2") format("opentype");
+  src: url("/fonts/Geist-Ultra.woff2") format("opentype");
 }
 
 .geist-ultra {
@@ -444,8 +444,6 @@ html {
   scrollbar-color: #0b599d black;
 }
 
-
-
 /* DISEÑO PARA MÓVILES */
 @media (min-width: 200px) {
   .cabecera {
@@ -492,8 +490,9 @@ html {
     color: rgb(222, 213, 213);
     padding-top: 20px;
     text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    text-wrap: pretty;
   }
 
   #contenedorImagenes {
@@ -687,5 +686,25 @@ html {
   .parrafo {
     margin-left: 20%;
     margin-right: 20%;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes opacityDown {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
