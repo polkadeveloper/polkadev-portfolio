@@ -2,7 +2,7 @@
   "name": "miportfolio",
   "version": "1.0.0",
   "description": "El proyecto de mi portfolio personal",
-  "main": "tailwind.config.js",
+  "main": "email.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
