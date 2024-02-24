@@ -13,10 +13,10 @@ app.use(express.json())
 // Agregar middleware para manejar el cuerpo de las solicitudes POST
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req, res) => {
-  let html = fs.readFileSync('public/index.html', 'utf8')
-  res.send(html)
-})
+// app.get('/', (req, res) => {
+//   let html = fs.readFileSync('public/index.html', 'utf8')
+//   res.send(html)
+// })
 
 app.post('/email', async (req, res) => {
   const {
