@@ -1,8 +1,6 @@
 import express from 'express'
-import fs from 'node:fs'
 import { Resend } from 'resend'
-import { RESEND_TOKEN } from './env/tokens.js'
-import { type } from 'node:os'
+import { RESEND_TOKEN } from '../env/tokens.js'
 
 const resend = new Resend(RESEND_TOKEN)
 const PORT = process.env.PORT || 3000
@@ -12,11 +10,6 @@ app.use(express.static('public')) // serve static files from public directory
 app.use(express.json())
 // Agregar middleware para manejar el cuerpo de las solicitudes POST
 app.use(express.urlencoded({ extended: true }))
-
-// app.get('/', (req, res) => {
-//   let html = fs.readFileSync('public/index.html', 'utf8')
-//   res.send(html)
-// })
 
 app.post('/email', async (req, res) => {
   const {
