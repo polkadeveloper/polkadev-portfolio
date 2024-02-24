@@ -59,7 +59,7 @@ app.post('/email', async (req, res) => {
     subject: 'Nuevo mensaje de contacto desde la web de Portfolio',
     html: `
       <h2>Nombre y apellidos: ${nombre} ${apellido} ${segundoApellido}</h2>
-      <h2><strong>Teléfono: ${telefono}</strong></h2>
+      <h2><strong>Teléfono: +34${telefono}</strong></h2>
       <h2><strong>Email: ${email}</strong></h2>
       <h2><strong>Empresa: ${empresa}</strong></h2>
       <h2><strong>Mensaje: ${mensaje}</strong></h2>
