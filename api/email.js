@@ -11,7 +11,7 @@ app.use(express.json())
 // Agregar middleware para manejar el cuerpo de las solicitudes POST
 app.use(express.urlencoded({ extended: true }))
 
-app.post('/email', async (req, res) => {
+app.post('/api/email', async (req, res) => {
   const {
     nombre,
     apellido,
