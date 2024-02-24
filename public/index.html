@@ -466,7 +466,7 @@
 
         <!-- Formulario de contacto -->
         <form
-          action="/email"
+          action="/api/email"
           method="post"
           class="flex flex-col items-center w-[90%] md:w-[80%] lg:w-[60%] xl:w-[50%] xl:h-[70%] 2xl:w-[48%] 2xl:h-[90%] rounded-xl gap-5 pb-10 border-2 border-[#39baff] bg-black hidden-scroll"
         >
@@ -1043,7 +1043,7 @@
           const formData = new FormData(event.target)
           const data = Object.fromEntries(formData)
 
-          const response = await fetch('/email', {
+          const response = await fetch('/api/email', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
