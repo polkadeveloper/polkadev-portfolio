@@ -24,9 +24,6 @@
   </head>
 
   <body>
-    <script>
-      inject()
-    </script>
     <!-- Cabecera responsive de la página -->
     <header class="cabecera">
       <!-- Logo usuario polkadev -->
@@ -1155,12 +1152,13 @@
         })
     </script>
 
-    <script type="module">
-      import { injectSpeedInsights } from '@vercel/speed-insights'
-
-      injectSpeedInsights()
-
-      import { inject } from '@vercel/analytics'
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          ;(window.vaq = window.vaq || []).push(arguments)
+        }
     </script>
+    <script defer src="/_vercel/insights/script.js"></script>
   </body>
 </html>
