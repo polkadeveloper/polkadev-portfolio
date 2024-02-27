@@ -1,7 +1,7 @@
 {
-  "name": "miportfolio",
+  "name": "polkadev-portfolio",
   "version": "1.0.0",
-  "description": "El proyecto de mi portfolio personal",
+  "description": "PolkaDev Portfolio de un desarrollador web",  
   "main": "email.js",
   "type": "module",
   "scripts": {
@@ -14,6 +14,6 @@
     "@vercel/speed-insights": "^1.0.10",
     "express": "4.18.2",
     "geist": "1.2.2",
-    "resend": "^3.2.0"
+    "resend": "3.2.0"
   }
 }
