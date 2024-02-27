@@ -13,7 +13,7 @@
     "@midudev/tailwind-animations": "^0.0.7",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
-    "dotenv": "^16.4.5",
+    "dotenv": "16.4.5",
     "express": "4.18.2",
     "geist": "1.2.2",
     "resend": "3.2.0"
