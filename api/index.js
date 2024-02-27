@@ -1,3 +1,3 @@
-import app from '../email.js'
+import app from '../server.js'
 
 export default app
