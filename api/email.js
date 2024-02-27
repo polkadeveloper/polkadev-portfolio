@@ -3,6 +3,7 @@ dotenv.config()
 import express from 'express'
 import { Resend } from 'resend'
 
+// Inicializar Resend con el token de la API
 const resend = new Resend(process.env.RESEND_TOKEN)
 const PORT = process.env.PORT || 3000
 const app = express()
