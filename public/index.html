@@ -839,80 +839,47 @@
       })
 
       // ANIMACIÓN POSTER FRONTAL EN MOVIMIENTO AL HACER HOVER
-const el = document.getElementById('poster') // Selecciona el elemento con el id 'poster' y lo almacena en la variable 'el'.
-const height = el.clientHeight // Obtiene la altura del elemento 'poster' y la almacena en la variable 'height'.
-const width = el.clientWidth // Obtiene el ancho del elemento 'poster' y lo almacena en la variable 'width'.
-el.style.cursor = 'crosshair' // Cambia el cursor del mouse al pasar sobre el elemento 'poster' a un puntero.
+      const el = document.getElementById('poster') // Selecciona el elemento con el id 'poster' y lo almacena en la variable 'el'.
+      const height = el.clientHeight // Obtiene la altura del elemento 'poster' y la almacena en la variable 'height'.
+      const width = el.clientWidth // Obtiene el ancho del elemento 'poster' y lo almacena en la variable 'width'.
+      el.style.cursor = 'crosshair' // Cambia el cursor del mouse al pasar sobre el elemento 'poster' a un puntero.
 
-// Detecta si el dispositivo es un móvil
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+      // Detecta si el dispositivo es un móvil
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
 
-function handleDeviceOrientation(evt) {
-  // Obtiene los grados de rotación alrededor de los ejes beta (x) y gamma (y)
-  const xRotation = evt.beta // -180 a 180
-  const yRotation = evt.gamma // -90 a 90
+      // Si el dispositivo no es un móvil, se activa el efecto de movimiento del poster.
+      if (!isMobile) {
+        // Agrega un evento 'mousemove' al elemento 'poster' que se activa cuando el mouse se mueve sobre él.
+        el.addEventListener('mousemove', (evt) => {
+          const { layerX, layerY } = evt // Obtiene las coordenadas 'layerX' y 'layerY' del evento del mouse.
 
-  // Normaliza los grados de rotación para que coincidan con los valores utilizados para el mouse
-  const normalizedXRotation = ((xRotation + 90) / 180) * 5
-  const normalizedYRotation = ((yRotation + 45) / 90) * 5
+          // Calcula la rotación en el eje Y basándose en la posición del mouse dentro del elemento.
+          const yRotation = ((layerX - width / 2) / width) * 5
 
-  // Crea una cadena de transformación CSS que incluye la rotación y la perspectiva
-  const string = `
-  perspective(500px)
-  scale(1.1)
-  rotateX(${normalizedXRotation}deg)
-  rotateY(${normalizedYRotation}deg)`
+          // Calcula la rotación en el eje X basándose en la posición del mouse dentro del elemento.
+          const xRotation = ((layerY - height / 2) / height) * 5
 
-  // Aplica la transformación al elemento 'poster' para lograr el efecto de movimiento
-  el.style.transform = string
-}
-
-if (isMobile) {
-  if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-    // Solicita permiso en dispositivos iOS 13+
-    DeviceOrientationEvent.requestPermission()
-      .then(permissionState => {
-        if (permissionState === 'granted') {
-          window.addEventListener('deviceorientation', handleDeviceOrientation);
-        }
-      })
-      .catch(console.error);
-  } else {
-    // Para otros dispositivos
-    window.addEventListener('deviceorientation', handleDeviceOrientation);
-  }
-} else {
-  // Agrega un evento 'mousemove' al elemento 'poster' que se activa cuando el mouse se mueve sobre él.
-  el.addEventListener('mousemove', (evt) => {
-    const { layerX, layerY } = evt // Obtiene las coordenadas 'layerX' y 'layerY' del evento del mouse.
-
-    // Calcula la rotación en el eje Y basándose en la posición del mouse dentro del elemento.
-    const yRotation = ((layerX - width / 2) / width) * 5
-
-    // Calcula la rotación en el eje X basándose en la posición del mouse dentro del elemento.
-    const xRotation = ((layerY - height / 2) / height) * 5
-
-    // Crea una cadena de transformación CSS que incluye la rotación y la perspectiva.
-    const string = `
+          // Crea una cadena de transformación CSS que incluye la rotación y la perspectiva.
+          const string = `
       perspective(500px)
       scale(1.1)
       rotateX(${xRotation}deg)
       rotateY(${yRotation}deg)`
 
-    // Aplica la transformación al elemento 'poster' para lograr el efecto de movimiento.
-    el.style.transform = string
-  })
+          // Aplica la transformación al elemento 'poster' para lograr el efecto de movimiento.
+          el.style.transform = string
+        })
 
-  // Agrega un evento 'mouseout' al elemento 'poster' que se activa cuando el mouse sale del elemento.
-  el.addEventListener('mouseleave', () => {
-    // Restablece la transformación del elemento a su estado inicial.
-    el.style.transform = `
+        // Agrega un evento 'mouseout' al elemento 'poster' que se activa cuando el mouse sale del elemento.
+        el.addEventListener('mouseleave', () => {
+          // Restablece la transformación del elemento a su estado inicial.
+          el.style.transform = `
       perspective(500px)
       scale(1)
       rotateX(0)
       rotateY(0)`
-  })
-}
+        })
+      }
 
       // ANIMACIÓN AL HACER SCROLL
 
