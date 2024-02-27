@@ -1164,6 +1164,20 @@
             }, 2000) // Cambia la opacidad después de 2 segundos
           }
         })
+
+      document.addEventListener('DOMContentLoaded', function () {
+        // Detectar si el dispositivo es iOS
+        var isIOS =
+          /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream
+
+        // Aplicar estilos específicos de iOS
+        if (isIOS) {
+          var contentElements = document.querySelectorAll('.card .content')
+          contentElements.forEach(function (element) {
+            element.style.transform = 'none'
+          })
+        }
+      })
     </script>
 
     <script>
