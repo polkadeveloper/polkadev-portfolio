@@ -858,10 +858,10 @@
 
         // Crea una cadena de transformación CSS que incluye la rotación y la perspectiva.
         const string = `
-        perspective(500px)
-        scale(1.1)
-        rotateX(${xRotation}deg)
-        rotateY(${yRotation}deg)`
+            perspective(500px)
+            scale(1.1)
+            rotateX(${xRotation}deg)
+            rotateY(${yRotation}deg)`
 
         // Aplica la transformación al elemento 'poster' para lograr el efecto de movimiento.
         el.style.transform = string
@@ -871,10 +871,10 @@
       el.addEventListener('mouseleave', () => {
         // Restablece la transformación del elemento a su estado inicial.
         el.style.transform = `
-        perspective(500px)
-        scale(1)
-        rotateX(0)
-        rotateY(0)`
+            perspective(500px)
+            scale(1)
+            rotateX(0)
+            rotateY(0)`
       })
 
       // ANIMACIÓN AL HACER SCROLL
@@ -1007,9 +1007,9 @@
         // Añadimos load lazy para que cargue la imagen cuando se necesite
         imgTecnologia.loading = 'lazy'
         poligono.className = `${currentTechnology.color} text-white w-64 h-36 absolute top-0 right-0 -z-10`
-        poster.className = `${currentTechnology.bckColor} w-[300px] h-[450px] md:w-[550px] md:h-[250px] lg:w-[700px] lg:h-[300px] xl:w-[850px] xl:h-[350px] 
-                2xl:w-[800px] 2xl:h-[300px] m-0 flex justify-center items-center rounded-lg mt-16 md:mt-10 lg:mt-14 
-                border-[0.2rem] ${currentTechnology.borderColor}`
+        poster.className = `${currentTechnology.bckColor} w-[300px] h-[450px] md:w-[550px] md:h-[250px] lg:w-[700px] lg:h-[300px] xl:w-[850px] xl:h-[350px]
+                    2xl:w-[800px] 2xl:h-[300px] m-0 flex justify-center items-center rounded-lg mt-16 md:mt-10 lg:mt-14
+                    border-[0.2rem] ${currentTechnology.borderColor}`
         bordeTarjeta.className = `w-[97%] h-[97%] sm:w-[96%] sm:h-[92%] border-[0.2rem] relative rounded-lg z-30 overflow-hidden ${currentTechnology.borderColor}`
 
         // Incrementa el índice de la tecnología actual
@@ -1176,6 +1176,10 @@
           contentElements.forEach(function (element) {
             element.style.transform = 'none'
           })
+
+          // Cambiar la propiedad background-attachment de la sección
+          var section = document.getElementById('seccionTerciaria')
+          section.style.backgroundAttachment = 'scroll'
         }
       })
     </script>
