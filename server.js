@@ -13,6 +13,7 @@ app.use(express.json())
 // Agregar middleware para manejar el cuerpo de las solicitudes POST
 app.use(express.urlencoded({ extended: true }))
 
+// Ruta para enviar un correo electrónico
 app.post('/api/email', async (req, res) => {
   const {
     nombre,
@@ -66,6 +67,11 @@ app.post('/api/email', async (req, res) => {
   }
 
   res.status(200).json({ data })
+})
+
+// Ruta para realizar un health check
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'ok' })
 })
 
 app.listen(PORT, () => {
