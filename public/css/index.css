@@ -250,12 +250,11 @@ textarea::placeholder {
 
 /* Estilos específicos para iOS */
 @media screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  .front {
+  .card:hover .content {
     /* Deshacer la transformación para iOS */
     transform: none;
   }
 }
-
 .description {
   box-shadow: 0px 0px 10px 5px #000000;
   width: 100%;
