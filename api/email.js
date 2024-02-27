@@ -1,8 +1,10 @@
+import dotenv from 'dotenv'
+dotenv.config()
 import express from 'express'
 import { Resend } from 'resend'
 import { RESEND_TOKEN } from '../env/tokens.js'
 
-const resend = new Resend(RESEND_TOKEN)
+const resend = new Resend(process.env.RESEND_TOKEN)
 const PORT = process.env.PORT || 3000
 const app = express()
 
