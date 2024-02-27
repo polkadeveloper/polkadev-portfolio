@@ -71,3 +71,5 @@ app.post('/api/email', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`)
 })
+
+export default app
