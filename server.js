@@ -50,7 +50,7 @@ app.post('/api/email', async (req, res) => {
     return res.status(400).json({ error: 'El correo electrónico no es válido' })
   }
   const { data, error } = await resend.emails.send({
-    from: 'PolkaDev <onboarding@resend.dev>',
+    from: 'PolkaDev <alvarobarcena@polkadev.es>',
     to: ['alvarobarcena27@gmail.com'],
     subject: 'Nuevo mensaje de contacto desde la web de Portfolio',
     html: `
