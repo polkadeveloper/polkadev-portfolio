@@ -75,6 +75,7 @@ app.post('/api/email', async (req, res) => {
         h2 {
         color: #333;
         font-family: Arial, sans-serif;
+        text-align: center;
         }
         strong {
         color: #555;
