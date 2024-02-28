@@ -71,17 +71,17 @@ app.post('/api/email', async (req, res) => {
     to: ['alvarobarcena27@gmail.com'],
     subject: 'Mensaje de contacto desde la web de www.polkadev.es',
     html: `
-      <h1>Has recibido un mensaje de contacto desde la web de www.polkadev.es:</h1>
-      <p style="font-size: 1.2em;">${format(new Date(), 'es', { dateStyle: 'long' })}</p>
-      <h2><strong>Información de contacto:</strong></h2>
-      <table style="font-size: 1.2em;">
+      <h2 style="color: black;">Has recibido un mensaje de contacto desde la web de www.polkadev.es:</h2>
+      <p style="font-size: 1.1em; color: black;">${format(new Date(), 'es', { dateStyle: 'long' })}</p>
+      <h2 style="color: black;"><strong>Información de contacto:</strong></h2>
+      <table style="font-size: 1.2em; color: black;">
         <tr><td>Nombre y apellidos:</td><td>${nombre} ${apellido} ${segundoApellido}</td></tr>
         <tr><td>Teléfono:</td><td>+34${telefono}</td></tr>
         <tr><td>Email:</td><td>${email}</td></tr>
         <tr><td>Empresa:</td><td>${empresa}</td></tr>
       </table>
-      <h2><strong>Mensaje:</strong></h2>
-      <p style="font-size: 1.2em;">${mensaje}</p>
+      <h2 style="color: black;"><strong>Mensaje:</strong></h2>
+      <p style="font-size: 1.1em; color: black;">${mensaje}</p>
     `,
   })
 
