@@ -74,7 +74,7 @@ app.post('/api/email', async (req, res) => {
       <h1>Has recibido un mensaje de contacto desde la web de PolkaDev:</h1>
       <p>${format(new Date(), 'es', { dateStyle: 'long' })}</p>
       <h2><strong>Información de contacto:</strong></h2>
-      <table>
+      <table style="font-size: 1.2em;">
         <tr><td>Nombre y apellidos:</td><td>${nombre} ${apellido} ${segundoApellido}</td></tr>
         <tr><td>Teléfono:</td><td>+34${telefono}</td></tr>
         <tr><td>Email:</td><td>${email}</td></tr>
