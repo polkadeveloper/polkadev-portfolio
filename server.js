@@ -73,7 +73,7 @@ app.post('/api/email', async (req, res) => {
     html: `
       <style>
         h2 {
-        color: #333;
+        color: red;
         font-family: Arial, sans-serif;
         text-align: center;
         }
