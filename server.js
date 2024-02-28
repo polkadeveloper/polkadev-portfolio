@@ -71,18 +71,8 @@ app.post('/api/email', async (req, res) => {
     to: ['alvarobarcena27@gmail.com'],
     subject: 'Mensaje de contacto desde la web de PolkaDev',
     html: `
-      <style>
-        h2 {
-        color: red;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        }
-        strong {
-        color: #555;
-        }
-      </style>
       <h2>Has recibido un mensaje de contacto desde la web de PolkaDev:</h2>
-      <h2>${format(new Date(), 'es', { dateStyle: 'long', timeStyle: 'short' })}</h2>
+      <h2>${format(new Date(), 'es', { dateStyle: 'long' })}</h2>
       <h2>Nombre y apellidos: ${nombre} ${apellido} ${segundoApellido}</h2>
       <h2><strong>Teléfono: +34${telefono}</strong></h2>
       <h2><strong>Email: ${email}</strong></h2>
