@@ -52,8 +52,10 @@ app.post('/api/email', async (req, res) => {
   const { data, error } = await resend.emails.send({
     from: 'PolkaDev <alvarobarcena@polkadev.es>',
     to: ['alvarobarcena27@gmail.com'],
-    subject: 'Nuevo mensaje de contacto desde la web de Portfolio',
+    subject: 'Mensaje de contacto desde la web de PolkaDev',
     html: `
+      <h2>Has recibido un mensaje de contacto desde la web de PolkaDev:</h2>
+      <h2>${new Date().toLocaleString()}</h2>
       <h2>Nombre y apellidos: ${nombre} ${apellido} ${segundoApellido}</h2>
       <h2><strong>Teléfono: +34${telefono}</strong></h2>
       <h2><strong>Email: ${email}</strong></h2>
