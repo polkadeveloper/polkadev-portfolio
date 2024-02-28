@@ -8,6 +8,23 @@ const resend = new Resend(process.env.RESEND_TOKEN)
 const PORT = process.env.PORT || 3000
 const app = express()
 
+// Función para formatear una fecha en el idioma especificado
+const format = (date, locale, options) => {
+  // La función Intl.DateTimeFormat() es una función incorporada en JavaScript
+  // que se utiliza para formatear fechas en diferentes idiomas.
+
+  // 'locale' es un parámetro que especifica el idioma en el que se formateará la fecha.
+  // Si el idioma especificado no está soportado, se usará el inglés por defecto.
+
+  // 'options' es un objeto que puede contener varias propiedades para personalizar
+  // el formato de la fecha, como el estilo de la fecha, el estilo de la hora, etc.
+
+  // 'date' es la fecha que se va a formatear.
+
+  // La función format() se utiliza para formatear la fecha en el idioma especificado.
+  return new Intl.DateTimeFormat(locale, options).format(date)
+}
+
 app.use(express.static('public')) // serve static files from public directory
 app.use(express.json())
 // Agregar middleware para manejar el cuerpo de las solicitudes POST
@@ -55,7 +72,7 @@ app.post('/api/email', async (req, res) => {
     subject: 'Mensaje de contacto desde la web de PolkaDev',
     html: `
       <h2>Has recibido un mensaje de contacto desde la web de PolkaDev:</h2>
-      <h2>${new Date().toLocaleString()}</h2>
+      <h2>${format(new Date(), 'es', { dateStyle: 'long' })}</h2>
       <h2>Nombre y apellidos: ${nombre} ${apellido} ${segundoApellido}</h2>
       <h2><strong>Teléfono: +34${telefono}</strong></h2>
       <h2><strong>Email: ${email}</strong></h2>
